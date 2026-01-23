@@ -26,6 +26,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Ejecutar pruebas
+      - name: Ejecutar pruebas con coverage
         run: |
-          python test_servidor.py
+          python -m coverage run test_servidor.py
+
+      - name: Generar informe de cobertura xml
+        run: |
+          python -m coverage xml
+
+      - name: Enviar reporte a Codacy
+        uses: codacy/codacy-coverage-reporter-action@v1
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: coverage.xml
