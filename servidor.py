@@ -20,7 +20,8 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             <h1>Hola desde un servidor Python</h1>
             <p>Este es un servidor simple que responde a solicitudes GET.</p>
             <p>Web del grupo-DAS.</p>
-            <img src="https://www.entradas.com/obj/media/ES-eventim/galery/222x222/a/EscudoAtleti_24-25_artist_222x222.jpg">
+            <img src="https://cdn.prod.website-files.com/64fa82cbdeed167ebaefef84/64fa868eecc183a3dd76ab4c_603ec5023c4ad8fde1783428_li2FnlaQX3wZEqCdfWmynR3kTFRIelaf-BXa21868XGfGWQiBv5FISkffcRaUhXrgoKiMX9FiLDGZ2jxwKGdt_vTyGUVHlqcm9uMjUBNQRgltzfgD3TuINwNixxWI2R3ay9vcAc7.jpeg">
+
 
 
         </body>
